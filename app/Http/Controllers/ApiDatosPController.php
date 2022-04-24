@@ -37,7 +37,15 @@ class ApiDatosPController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //return $request->all();
+        $datos = new DatosP;
+
+        $datos->nombre = $request->nombre;
+        $datos->posicion = $request->posicion;
+        $datos->salario = $request->salario;
+        $datos->save();
+
+        return 'Datos guardados correctamente';
     }
 
     /**

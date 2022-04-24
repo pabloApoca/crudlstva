@@ -14,8 +14,11 @@
                     </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
-
+                    <!--{{ __('You are logged in!') }}-->
+                    <button type="button" class="btn btn-primary float-right"
+                    @click="NuevoDato()">Nuevo</button>
+                    <br>
+                    <br>
                     <table class="table">
                         <thead>
                             <tr>
@@ -23,6 +26,7 @@
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Posicion</th>
                                 <th scope="col">Salario</th>
+                                <th scope="col">Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -31,6 +35,13 @@
                                 <td>@{{dato.nombre}}</td>
                                 <td>@{{dato.posicion}}</td>
                                 <td>@{{dato.salario}}</td>
+                                <td>
+                                <button type="button" class="btn btn-info">Editar</button>
+                                <button type="button" class="btn btn-danger">Eliminar</button>
+                                
+                                </td>
+                                
+
                             </tr>
 
                         </tbody>
