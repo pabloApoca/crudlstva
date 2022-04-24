@@ -10,8 +10,8 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <!-- Scripts 
+    <script src="{{ asset('js/app.js') }}" defer></script>-->
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -31,14 +31,14 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
     <!-- Sweetalert2 
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>-->
-    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.7/dist/sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.7/dist/sweetalert2.min.css"></script>
 
-   <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>-->
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     
 </head>
 
@@ -102,8 +102,10 @@
         </main>
     </div>
         <!-- Scripts -->
-        <!--<script src="{{ asset('js/vue.js') }}" defer></script>-->
+        <!--<script src="{{ asset('js/vue.js') }}" defer></script>
         <script src="{{ asset('resources/js/app.js') }} "></script>
+        <script src="{{ asset('crudlstva/public/js/js/vue.js') }}"></script>-->
+        <script src="{{ asset('js/vue.js') }}"></script>
 
 </body>
 
