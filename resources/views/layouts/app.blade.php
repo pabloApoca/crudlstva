@@ -99,7 +99,9 @@
         </main>
     </div>
         <!-- Scripts -->
-        <script src="{{ asset('js/vue.js') }}" defer></script>
+        <!--<script src="{{ asset('js/vue.js') }}" defer></script>-->
+        <script src="{{ asset('resources/js/app.js') }} "></script>
+
 </body>
 
 </html>

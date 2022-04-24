@@ -27,6 +27,26 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-const app = new Vue({
+/*const app = new Vue({
     el: '#app',
-});
+});*/
+
+const app = new Vue({
+    el:'#app',
+    data: { 
+        datos:'',
+        mensaje: ''
+    },
+    methods:{
+        getDatos(){
+            let url = '/api/datosp';
+            axios.get(url).then(response=>{
+                console.log(response.data)
+                this.datos = response.data;
+            });
+        }
+    },
+    mounted(){
+        this.getDatos();
+    }
+})

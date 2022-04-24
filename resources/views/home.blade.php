@@ -23,7 +23,6 @@
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Posicion</th>
                                 <th scope="col">Salario</th>
-                                <th scope="col">Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -41,4 +40,5 @@
         </div>
     </div>
 </div>
+
 @endsection

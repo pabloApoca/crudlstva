@@ -5423,8 +5423,30 @@ Vue.component('example-component', (__webpack_require__(/*! ./components/Example
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+/*const app = new Vue({
+    el: '#app',
+});*/
+
 var app = new Vue({
-  el: '#app'
+  el: '#app',
+  data: {
+    datos: '',
+    mensaje: ''
+  },
+  methods: {
+    getDatos: function getDatos() {
+      var _this = this;
+
+      var url = '/api/datosp';
+      axios.get(url).then(function (response) {
+        console.log(response.data);
+        _this.datos = response.data;
+      });
+    }
+  },
+  mounted: function mounted() {
+    this.getDatos();
+  }
 });
 
 /***/ }),
